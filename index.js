@@ -1,19 +1,17 @@
-// Exercise 1 Max of Two Numbers Simplest Form / Conditional Operators Form
+//Exercise 2 Landscape or Portrait
+//returns true is width is greater than height
 
-// const number = max(1, 2);
-// function max(a, b) {
-//   if (a > b) return a;
-//   return b;
+// const Photograph = isLandscape(1000, 500);
+
+// function isLandscape(width, height) {
+//   if (width > height) return true;
+//   else return false;
 // }
 
-// Conditional operator ///
+// console.log(Photograph);
 
-//(condition) ? a : b
-
-const number = max(1, 2);
-function max(a, b) {
-  return a > b ? a : b;
+function isLandscape(width, height) {
+  return width > height;
 }
-console.log(number);
 
-
+console.log(isLandscape(1000, 500));
