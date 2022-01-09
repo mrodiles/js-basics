@@ -1,17 +1,18 @@
-//Exercise 2 Landscape or Portrait
-//returns true is width is greater than height
+/// Exercise 3 FizzBuzz
+/// Divisible by 3 => Fizz
+/// Divisible by 5 => Buzz
+//Divisible by 3 & 5 => FizzBuzz
+/// Not Divisible by 3 or 5 => input
+/// Not a number => "not a number"
 
-// const Photograph = isLandscape(1000, 500);
-
-// function isLandscape(width, height) {
-//   if (width > height) return true;
-//   else return false;
-// }
-
-// console.log(Photograph);
-
-function isLandscape(width, height) {
-  return width > height;
+const output = fizzBuzz(false);
+console.log(output);
+function fizzBuzz(input) {
+  if (typeof input !== "number") return NaN;
+  if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+  if (input % 3 === 0) return "Fizz";
+  if (input % 5 === 0) return "Buzz";
+  return input;
 }
 
-console.log(isLandscape(1000, 500));
+
