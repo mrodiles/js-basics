@@ -1,7 +1,15 @@
-//Exercise 6 Count Truthy
-const array = [0, 1, 2, 3, 4, 5];
-function countTruthy(array) {
-  let count = 0;
-  for (let value of array) if (value) count++;
-  return count;
+//Exercise 7 String Properties
+const movie = {
+  title: "eye origins",
+  releaseYear: "2011",
+  rating: "5🌟🌟🌟🌟🌟,",
+  director: "Michael",
+};
+
+showProperties(movies);
+
+function showProperties(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] === "string") console.log(key, obj[key]);
+  }
 }
