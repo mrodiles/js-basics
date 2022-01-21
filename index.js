@@ -1,10 +1,7 @@
-//Exercise 5 Even and Odd Numbers
-
-showNumbers(10);
-
-function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {
-    const message = i % 2 === 0 ? "EVEN" : "ODD";
-    console.log(i, message);
-  }
+//Exercise 6 Count Truthy
+const array = [0, 1, 2, 3, 4, 5];
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) if (value) count++;
+  return count;
 }
