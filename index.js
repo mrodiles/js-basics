@@ -1,15 +1,13 @@
-//Exercise 7 String Properties
-const movie = {
-  title: "eye origins",
-  releaseYear: "2011",
-  rating: "5🌟🌟🌟🌟🌟,",
-  director: "Michael",
-};
+//Exercise 8 Sum of Multiples of 3 and 5
+console.log(sum(10);
 
-showProperties(movies);
+// Multiples of 
+function sum(limit){
+  const sum = 0;
 
-function showProperties(obj) {
-  for (let key in obj) {
-    if (typeof obj[key] === "string") console.log(key, obj[key]);
-  }
+for (let i = 0; i <= limit; i++) 
+if (i % 3 === 0 || i % 5 === 0)
+sum += i;
+
+return sum;
 }
